@@ -1,28 +1,13 @@
-== README
+== SWT2 2015/16 - Introductory Exercise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We prepared an application skeleton for you that includes all necessary gems and a set of tests.
 
-Things you may want to cover:
+DO NOT alter the tests! If you think a test has some problems, please contact the teaching staff. Same goes for the factories, which should give you some hints on how your data model could look like ...
 
-* Ruby version
+Finishing the exercise is rather straightforward:
+- Clone the Repository
+- Run 'bundle'
+- Run 'rake db:create db:migrate'
+- Run 'rake spec'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Then, continue to implement the features one by one, starting with whatever you deem to be most appropriate. Your final solution should be completely pushed to your private repository by Nov 6, 2015, 11:59pm CET. Make sure that all local changes are committed (git status) and pushed to the upstream repository (i.e., the one on GitHub). 
