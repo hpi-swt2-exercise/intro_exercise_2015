@@ -3,21 +3,24 @@ require 'rails_helper'
 describe "Adding Authors", :type => :feature do
 
   it "should add a simple author with correct information" do
-    visit "/authors/new"
+    visit authors_path
+    click_on("Add author")
     fill_author("Alan", "Turing", "http://wikipedia.org/Alan_Turing")
     submit_form
     expect(current_path).to eq(authors_path)
   end
 
   it "should not add an author with an invalid name" do
-    visit "/authors/new"
+    visit authors_path
+    click_on("Add author")
     fill_author("", "", "http://wikipedia.org/Alan_Turing")
     submit_form
     expect(page).to have_text("error")
   end
 
   it "should not accept wrong URLs as an author's homepage" do
-    visit "/authors/new"
+    visit authors_path
+    click_on("Add author")
     fill_author("Alan", "Turing", "not_a_url")
     submit_form
     expect(page).to have_text("error")
@@ -86,7 +89,7 @@ describe "Show Authors", :type => :feature do
   it "should show an author's details" do
     visit "/"
     click_on("Show authors")
-    click_on("#{@author.first_name} #{@author.last_name}")
+    click_on(@author.name)
     expect(current_path).to eq(author_path(@author))
     expect(page).to have_text(@paper.title)
   end
