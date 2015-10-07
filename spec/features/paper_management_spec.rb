@@ -7,7 +7,7 @@ describe "Adding Papers", :type => :feature do
   end
 
   it "should add a simple paper" do
-    visit("/")
+    visit root_path
     click_on("Show papers")
     expect(current_path).to eq(papers_path)
     click_on("Add paper")
