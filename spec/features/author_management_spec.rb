@@ -87,7 +87,7 @@ describe "Show Authors", :type => :feature do
   end
 
   it "should show an author's details" do
-    visit "/"
+    visit root_path
     click_on("Show authors")
     click_on(@author.name)
     expect(current_path).to eq(author_path(@author))
