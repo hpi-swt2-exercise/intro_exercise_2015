@@ -10,10 +10,12 @@ Finishing the exercise is rather straightforward:
 - Run 'rake db:create db:migrate'
 - Run 'rake spec'
 
-Then, continue to implement the features one by one, starting with whatever you deem to be most appropriate. Your final solution should be completely pushed to your private repository by Nov 6, 2015, 11:59pm CET. Make sure that all local changes are committed (git status) and pushed to the upstream repository (i.e., the one on GitHub). 
+Then, continue to implement the features one by one, starting with whatever you deem to be most appropriate. Your final solution should be completely pushed to your private repository by Nov 6, 2015, 11:59pm CET. Do not forget to upload a screenshot of your CodeSchool Badges to the repository, as well!
 
 === Tips
 - run 'rspec spec/features/<model>/<spec_name>.rb' to only run one set of specs
 - have a look at /spec/factories to get 'inspiration' for your data model
 - occasionally start up the server ('rails s') and have a look at the app in your browser (http://localhost:3000)
 - Look at the Mockup: https://gomockingbird.com/mockingbird/index.html?project=v890g6l#v890g6l/OQMURm
+- Make sure that all local changes are committed (git status) and pushed to the upstream repository (i.e., the one on GitHub) before the deadline
+
